@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8">
+    </head>
+    <body>
+      <h1 id="title">Survey Form</h1>
+<p id="description">This is a survery form</p>
+<form method="post" action='https://register-demo.freecodecamp.org' id="survey-form">
+<fieldset>
+    <label for="name" id="name-label">What is your name? <input id="name" name="name" type="text" required placeholder="Name" value="Name"></input></label>
+    <label for="email" id="email-label">What is your email? <input id="email" name="email" type="email" required placeholder="Email" value="Email"></input></label>
+    <label for="number" id="number-label">What is your number? <input id="number" name="number" type="number" required min="10" max="500" placeholder="Number" value="Number"></input></label>
+  
+  </fieldset>
+  <fieldset>
+    <label for="dropdown">Pick an option: <select id="dropdown" name="dropdown">
+      <option value="0">
+        select one
+        </option>
+        <option value="1">
+          Option 1
+        </option>
+        <option value="2">
+          Option 2
+        </option>
+    </fieldset>
+ <fieldset>
+   <label for="option-1"><input id="option-1" type="radio" name="options" class="option-1" value="1"/> Option 1</label>
+        <label for="option-2"><input id="option-2" type="radio" name="options" class="option-2" value="2"/> Option 2</label> 
+   </fieldset>
+   <fieldset>
+      <label for="choice-1">
+          <input id="choice-1" type="checkbox"
+          value="1">
+          Choice 1
+        </label>
+         <label for="choice-2">
+          <input id="choice-2" type="checkbox" value="2">
+          Choice 2
+        </label>
+         <label for="choice-3">
+          <input id="choice-3" type="checkbox" value="3">
+          Choice 3
+        </label>
+     </fieldset>
+     <fieldset>
+      <label>Please enter a bio: <textarea textarea id="bio" name="bio" rows="3" cols="25" placeholder="I like music..."></textarea>
+       </fieldset>
+<input id="submit" 
+type="submit" value="Submit">
+ </form>
+      </body>
+  </html>
